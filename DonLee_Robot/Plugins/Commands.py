@@ -33,14 +33,14 @@ async def start(bot, update):
             await update.reply_cached_media(
                 file_id,
                 quote=True,
-                caption = caption,
+                caption = f" {file_name}",
                 parse_mode="html",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
                             InlineKeyboardButton
                                 (
-                                    'Developers', url="https://t.me/mo_tech_YT"
+                                    '📺join my channel📺', url="https://t.me/MM_CINEMA_CLUB"
                                 )
                         ]
                     ]
@@ -52,14 +52,14 @@ async def start(bot, update):
         return
 
     buttons = [[
-        InlineKeyboardButton('My Dev 🧒', url='https://t.me/mrk_yt'),
-        InlineKeyboardButton('Source Code 🧾', url ='https://github.com/PR0FESS0R-99/DonLee-Robot-V1')
+        InlineKeyboardButton('Owner 👨‍💼', url='https://t.me/CLOVERDZ'),
+        InlineKeyboardButton('Join my channel 📺', url ='https://t.me/MM_CINEMA_CLUB')
     ],[
-        InlineKeyboardButton('🛠 Support 🛠', url='https://t.me/mo_tech_yt')
+        InlineKeyboardButton('🏅 Support Group 🏅', url='https://t.me/Moviez_group_mg')
     ],[
         InlineKeyboardButton('⚙ Help ⚙', callback_data="help")
     ],[
-        InlineKeyboardButton('💫 Deploy Video 💫', url='https://youtu.be/uAHl5jvnrhk')
+        InlineKeyboardButton('💫 Join my channel 💫', url='https://t.me/MM_CINEMA_CLUB')
     ]]
     
     reply_markup = InlineKeyboardMarkup(buttons)

@@ -82,7 +82,7 @@ async def cb_navg(bot, update: CallbackQuery):
 
     if ((index_val + 1 )== max_pages) or ((index_val + 1) == len(results)): # Max Pages
         temp_results.append([
-            InlineKeyboardButton("⏪ Back", callback_data=f"navigate({index_val}|back|{query})")
+            InlineKeyboardButton("⭕️ Back⭕️", callback_data=f"navigate({index_val}|back|{query})")
         ])
 
     elif int(index_val) == 0:
@@ -90,13 +90,13 @@ async def cb_navg(bot, update: CallbackQuery):
 
     else:
         temp_results.append([
-            InlineKeyboardButton("⏪ Back", callback_data=f"navigate({index_val}|back|{query})"),
-            InlineKeyboardButton("Next ⏩", callback_data=f"navigate({index_val}|next|{query})")
+            InlineKeyboardButton("⭕️ Back⭕️", callback_data=f"navigate({index_val}|back|{query})"),
+            InlineKeyboardButton("⭕️Next ⭕️", callback_data=f"navigate({index_val}|next|{query})")
         ])
 
     if not int(index_val) == 0:    
         temp_results.append([
-            InlineKeyboardButton(f"🔰 Page {index_val + 1}/{len(results) if len(results) < max_pages else max_pages} 🔰", callback_data="ignore")
+            InlineKeyboardButton(f"📝 Page {index_val + 1}/{len(results) if len(results) < max_pages else max_pages} 📝", callback_data="ignore")
         ])
     
     if show_invite and int(index_val) !=0 :
@@ -143,7 +143,7 @@ async def cb_navg(bot, update: CallbackQuery):
     
     reply_markup = InlineKeyboardMarkup(temp_results)
     
-    text=f"<i>Found</i> <code>{leng}</code> <i>Results For Your Query:</i> <code>{query}</code>"
+    text=f"<i>🗂️𝑻𝒐𝒕𝒂𝒍 𝑭𝒊𝒍𝒆</i> <code>{leng}</code> <i>🎬𝐌𝐨𝐯𝐢𝐞 𝐍𝐚𝐦𝐞:</i> <code>{query}</code>"
         
     try:
         await update.message.edit(
@@ -1602,14 +1602,14 @@ async def cb_about(bot, update: CallbackQuery):
     text=f"<i><u>Bot's Status</u></i>\n"
     text+=f"\n<b><i>Bot's Uptime:</i></b> <code>{time_formatter(time.time() - start_uptime)}</code>\n"
     text+=f"\n<b><i>Bot Funtion:</i></b> <i>Auto Filter Files</i>\n"
-    text+=f"""\n<b><i>Bot Support:</i></b> <a href="https://t.me/Mo_Tech_Group">@Mo_Tech_Group</a>\n"""
-    text+="""\n<b><i>Source Code:</i></b> <a href="https://github.com/PR0FESS0R-99/DonLee_Robot">Source</a>"""
+    text+=f"""\n<b><i>Support Group:</i></b> <a href="https://t.me/Moviez_group_mg">@Moviez_group_mg</a>\n"""
+    text+="""\n<b><i>Join my channel:</i></b> <a href="https://t.me/MM_CINEMA_CLUB">Sub</a>"""
 
     buttons = [
         [
             InlineKeyboardButton
                 (
-                    "My Dev ⚡", url="https://t.me/MRK_YT"
+                    "📺 Join my channel 📺", url="https://t.me/MM_CINEMA_CLUB"
                 ),
                 
             InlineKeyboardButton
@@ -1640,14 +1640,14 @@ async def callback_data(bot, update: CallbackQuery):
 
     if query_data == "start":
         buttons = [[
-            InlineKeyboardButton('My Dev 👨‍🔬', url='https://t.me/Mrk_YT'),
-            InlineKeyboardButton('Source Code 🧾', url ='https://github.com/PR0FESS0R-99/DonLee-Robot-V1')
+            InlineKeyboardButton('Owner 👨‍💼', url='https://t.me/CLOVERDZ'),
+            InlineKeyboardButton('Join my channel 📺', url ='https://t.me/MM_CINEMA_CLUB')
         ],[
-            InlineKeyboardButton('🛠 Support 🛠', url='https://t.me/mo_Tech_yt')
+            InlineKeyboardButton('🏅 Support Group 🏅', url='https://t.me/Moviez_group_mg')
         ],[
             InlineKeyboardButton('⚙ Help ⚙', callback_data="help")
         ],[
-            InlineKeyboardButton('💫 Deploy Video 💫', url='https://youtu.be/uAHl5jvnrhk')
+            InlineKeyboardButton('💫 join my channel 💫', url='https://t.me/MM_CINEMA_CLUB')
         ]]
     
         reply_markup = InlineKeyboardMarkup(buttons)

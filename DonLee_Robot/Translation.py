@@ -5,12 +5,9 @@
 class Translation(object):
     
     START_TEXT = """<b>🙋‍♂️Hey {}!!</b>
-<b>Am Just A Donlee Adv Auto Filter Bot....😉</b>
-
-<b>Just Add Me To Your Group And Channel And Connect Them And See My Pevers 🔥🔥😝</b>
-<b>Watch the video below to build an DonLee Adv Autofilter bot like me...</b>
-<b>Subscribe to the update channel to learn about my updates and activity...</b>
-<b>Press /help to know about available commands🤪</b>"""    
+<b>CLOVER....♣️</b>
+ നീ ഏതാ മോനൂസെ എന്നെ സിനിമ ക്ലബ്‌ ഗ്രൂപ്പിൽ മാത്രമേ ഉപയോഗിക്കാൻ പറ്റൂ...
+ വെറുതെ സമയം കളയാൻ നിൽക്കണ്ട...വേഗം ഗ്രൂപ്പിലേക്ക് വിട്ടോ സിനിമ അവിടെ കിട്ടും...🤭🤭🤭
    
     HELP_TEXT = """
 <b><i><u>How To Use Me!?</u></i></b>
@@ -45,13 +42,13 @@ class Translation(object):
 @Mo_Tech_YT
 """
     
-    ABOUT_TEXT = """<b>➥ Name</b> : <code> Auto Filter Bot</code>
+    ABOUT_TEXT = """<b>➥ Name</b> : <code> CLOVER </code>
     
-<b>➥ Creator</b> : <b><i><a href="https://t.me/Mrk_YT">Muhammed Rk</a></i></b>
+<b>➥ Join my channel</b> : <b><i><a href="https://t.me/MM_CINEMA_CLUB">sub</a></i></b>
 
 <b>➥ Language</b> : <code>Python3</code>
 
 <b>➥ Library</b> : <i><a href="https://docs.pyrogram.org">Pyrogram Asyncio 1.13.0 </a></i>
 
-<b>➥ Source Code</b> : <i><a href="https://github.com/PR0FESS0R-99/DonLee_Robot">Click Me</a></i>
+<b>➥  𝘚𝘶𝘱𝘱𝘰𝘳𝘵 Group</b> : <i><a href="https://t.me/Moviez_group_mg">𝘚𝘶𝘱𝘱𝘰𝘳𝘵</a></i>
 """
